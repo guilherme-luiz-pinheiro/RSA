@@ -81,7 +81,6 @@ def decriptografar(mensagem_criptografada, chave_privada):
    return ''.join([chr(pow(char, d, n)) for char in mensagem_criptografada])
  
  
-# Código do Cliente (Alice) com Criptografia RSA
 def cliente():
    # Gerando chaves pública e privada
    chave_publica, chave_privada = gerar_chaves()

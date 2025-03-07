@@ -80,7 +80,6 @@ def criptografar(mensagem, chave_publica):
    e, n = chave_publica
    return [pow(ord(char), e, n) for char in mensagem]
  
-# Código do Servidor (Bob) com Criptografia RSA
 def servidor():
    # Gerando chaves pública e privada
    chave_publica, chave_privada = gerar_chaves()
