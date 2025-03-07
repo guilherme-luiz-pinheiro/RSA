@@ -95,11 +95,11 @@ Essa atividade foi crucial para entender o funcionamento do RSA e sua implementa
    ```
    git clone https://github.com/usuario/arquivo.git
    cd arquivo
-## Execute o servidor:
+# Execute o servidor:
 
 
 python servidor.py
-## Execute o cliente:
+# Execute o cliente:
 
 
 python cliente.py
