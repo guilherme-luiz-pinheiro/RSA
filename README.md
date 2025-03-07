@@ -95,10 +95,13 @@ Essa atividade foi crucial para entender o funcionamento do RSA e sua implementa
    ```
    git clone https://github.com/usuario/arquivo.git
    cd arquivo
-Execute o servidor:
 
+## Como Rodar
 
-python servidor.py
+1. Execute o servidor:
+
+   ```
+   python servidor.py
 Execute o cliente:
 
 
@@ -108,14 +111,26 @@ O cliente enviará uma mensagem para o servidor, que retornará a mensagem cript
 Funcionalidades
 Geração de Chaves: Utiliza o algoritmo RSA para gerar um par de chaves pública e privada.
 Criptografia e Descriptografia: Mensagens são criptografadas utilizando a chave pública do destinatário e descriptografadas com a chave privada correspondente.
-Comunicacao Cliente-Servidor: O cliente se conecta ao servidor via sockets TCP para enviar e receber mensagens criptografadas.
+Comunicação Cliente-Servidor: O cliente se conecta ao servidor via sockets TCP para enviar e receber mensagens criptografadas.
 Contribuição
 Se você deseja contribuir para este projeto, siga estas etapas:
 
 Faça um fork deste repositório.
-Crie uma branch para sua feature (git checkout -b minha-feature).
-Faça commit das suas alterações (git commit -am 'Adicionando minha feature').
-Faça push para a branch (git push origin minha-feature).
+Crie uma branch para sua feature:
+
+git checkout -b minha-feature
+Faça commit das suas alterações:
+
+git commit -am 'Adicionando minha feature'
+Faça push para a branch:
+
+git push origin minha-feature
 Crie um novo Pull Request.
 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+
+
+
+
+
+
