@@ -92,19 +92,20 @@ Essa atividade foi crucial para entender o funcionamento do RSA e sua implementa
 
 1. Clone este repositório.
    
-   ```
+   ```bash
    git clone https://github.com/usuario/arquivo.git
    cd arquivo
+Execute o servidor:
 
-## Como Rodar
-
-1. Execute o servidor:
-
-   ```
-   python servidor.py
+bash
+Copiar
+Editar
+python servidor.py
 Execute o cliente:
 
-
+bash
+Copiar
+Editar
 python cliente.py
 O cliente enviará uma mensagem para o servidor, que retornará a mensagem criptografada com a versão em maiúsculas.
 
@@ -116,21 +117,26 @@ Contribuição
 Se você deseja contribuir para este projeto, siga estas etapas:
 
 Faça um fork deste repositório.
+
 Crie uma branch para sua feature:
 
+bash
+Copiar
+Editar
 git checkout -b minha-feature
 Faça commit das suas alterações:
 
+bash
+Copiar
+Editar
 git commit -am 'Adicionando minha feature'
 Faça push para a branch:
 
+bash
+Copiar
+Editar
 git push origin minha-feature
 Crie um novo Pull Request.
+
 Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
-
-
-
-
-
-
