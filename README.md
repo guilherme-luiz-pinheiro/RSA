@@ -10,7 +10,7 @@ Este projeto implementa uma comunicação segura entre cliente e servidor utiliz
 
 ## Funcionamento
 
-### Cliente (Alice)
+### Cliente
 
 1. O cliente gera um par de chaves (pública e privada) utilizando o algoritmo RSA.
 2. O cliente se conecta ao servidor e envia sua chave pública.
@@ -18,7 +18,7 @@ Este projeto implementa uma comunicação segura entre cliente e servidor utiliz
 4. O cliente envia uma mensagem criptografada com a chave pública do servidor.
 5. O cliente recebe a resposta do servidor (mensagem em maiúsculas criptografada) e a descriptografa utilizando sua chave privada.
 
-### Servidor (Bob)
+### Servidor
 
 1. O servidor gera um par de chaves (pública e privada) utilizando o algoritmo RSA.
 2. O servidor aguarda a conexão do cliente.
