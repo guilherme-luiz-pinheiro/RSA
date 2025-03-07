@@ -92,51 +92,40 @@ Essa atividade foi crucial para entender o funcionamento do RSA e sua implementa
 
 1. Clone este repositório.
    
-   ```bash
+   ```
    git clone https://github.com/usuario/arquivo.git
    cd arquivo
-Execute o servidor:
+## Execute o servidor:
 
-bash
-Copiar
-Editar
+
 python servidor.py
-Execute o cliente:
+## Execute o cliente:
 
-bash
-Copiar
-Editar
+
 python cliente.py
 O cliente enviará uma mensagem para o servidor, que retornará a mensagem criptografada com a versão em maiúsculas.
 
-Funcionalidades
+## Funcionalidades
 Geração de Chaves: Utiliza o algoritmo RSA para gerar um par de chaves pública e privada.
 Criptografia e Descriptografia: Mensagens são criptografadas utilizando a chave pública do destinatário e descriptografadas com a chave privada correspondente.
 Comunicação Cliente-Servidor: O cliente se conecta ao servidor via sockets TCP para enviar e receber mensagens criptografadas.
-Contribuição
+## Contribuição
 Se você deseja contribuir para este projeto, siga estas etapas:
 
 Faça um fork deste repositório.
 
 Crie uma branch para sua feature:
 
-bash
-Copiar
-Editar
 git checkout -b minha-feature
 Faça commit das suas alterações:
 
-bash
-Copiar
-Editar
+
 git commit -am 'Adicionando minha feature'
 Faça push para a branch:
 
-bash
-Copiar
-Editar
+
 git push origin minha-feature
 Crie um novo Pull Request.
 
-Licença
+## Licença
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
