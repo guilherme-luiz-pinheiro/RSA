@@ -88,18 +88,18 @@ Essa atividade foi crucial para entender o funcionamento do RSA e sua implementa
 - Biblioteca `socket` (já inclusa no Python padrão).
 - Biblioteca `random` (já inclusa no Python padrão).
 
-## Como Rodar
+# Como Rodar
 
 1. Clone este repositório.
    
    ```
    git clone https://github.com/usuario/arquivo.git
    cd arquivo
-# Execute o servidor:
+## Execute o servidor:
 
 
 python servidor.py
-# Execute o cliente:
+## Execute o cliente:
 
 
 python cliente.py
