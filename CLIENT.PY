@@ -28,7 +28,6 @@ def miller_rabin(n, k=20):
             return False
     return True
 
-# Gerar número primo de 2048 bits
 def gerar_primo():
     while True:
         num = random.getrandbits(2048) | (1 << 2047) | 1
@@ -70,55 +69,42 @@ def gerar_chaves():
     d = inverso_modular(e, totiente)
     return (e, n), (d, n)
 
-# Função de criptografia RSA
 def criptografar(mensagem, chave_publica):
    e, n = chave_publica
    return [pow(ord(char), e, n) for char in mensagem]
  
-# Função de decriptação RSA
 def decriptografar(mensagem_criptografada, chave_privada):
    d, n = chave_privada
    return ''.join([chr(pow(char, d, n)) for char in mensagem_criptografada])
  
  
 def cliente():
-   # Gerando chaves pública e privada
    chave_publica, chave_privada = gerar_chaves()
  
-   # Conectando ao servidor
    serverName = '10.1.70.17'
    serverPort = 1300
    clientSocket = socket(AF_INET, SOCK_STREAM)
    clientSocket.connect((serverName, serverPort))
  
-   # Enviando a chave pública para o servidor
    clientSocket.send(str(chave_publica).encode())
    print(f"Chave pública do cliente enviada para o servidor: {chave_publica}")
  
-   # Recebendo a chave pública do servidor
    chave_publica_servidor = eval(str(clientSocket.recv(65000), 'utf-8'))
    print(f"Chave pública do servidor recebida: {chave_publica_servidor}")
  
-   # O cliente digita a mensagem
    mensagem = input("Digite a mensagem para enviar ao servidor: ")
  
-   # Criptografando a mensagem com a chave pública do servidor
    mensagem_criptografada = criptografar(mensagem, chave_publica_servidor)
  
-   # Enviando a mensagem criptografada para o servidor
    clientSocket.send(str(mensagem_criptografada).encode())
  
-   # Recebendo a mensagem criptografada do servidor
    mensagem_criptografada_do_servidor = eval(str(clientSocket.recv(65000), 'utf-8'))
    print(f"Mensagem criptografada recebida do servidor: {mensagem_criptografada_do_servidor}")
  
-   # Descriptografando a mensagem recebida usando a chave privada do cliente
    mensagem_decriptografada = decriptografar(mensagem_criptografada_do_servidor, chave_privada)
    print(f"Mensagem decriptografada recebida do servidor: {mensagem_decriptografada}")
  
-   # Fechando a conexão
    clientSocket.close()
  
-# Executando o cliente
 cliente()
  
