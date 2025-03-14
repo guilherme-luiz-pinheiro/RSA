@@ -1,5 +1,4 @@
 import random
-import math
 from socket import *
  
 def miller_rabin(n, k=20):

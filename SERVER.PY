@@ -1,5 +1,4 @@
 import random
-import math
 from socket import *
  
 def miller_rabin(n, k=20):
@@ -84,7 +83,7 @@ def servidor():
    serverSocket = socket(AF_INET, SOCK_STREAM)
    serverSocket.bind(("", serverPort))
    serverSocket.listen(5)
-   print("Servidor TCP (RSA) aguardando conexões na porta 1300...\n")
+   print("Servidor ON\n")
  
    connectionSocket, addr = serverSocket.accept()
    print(f"Conexão recebida de {addr}")
