@@ -86,5 +86,3 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 
 ---
 
-Agora seu README está mais organizado, visualmente atrativo e com as seções bem definidas! Se quiser adicionar mais informações ou personalizar algo, é só pedir! 🚀
-
